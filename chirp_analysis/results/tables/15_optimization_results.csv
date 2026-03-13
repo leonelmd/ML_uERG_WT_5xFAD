@@ -1,0 +1,11 @@
+signal,p_5xFAD,method,n_iterations,init,note
+mean_WT,0.6724,reference,0,,Group mean WT signal
+mean_5xFAD,0.7589,reference,0,,Group mean 5xFAD signal
+gradient_FAD_mean_WT,0.9985,gradient_ascent_FAD,500,mean_WT,"lr=0.05, TV_w=0.0001, L2_w=1e-05"
+gradient_FAD_mean_5xFAD,0.9991,gradient_ascent_FAD,500,mean_5xFAD,"lr=0.05, TV_w=0.0001, L2_w=1e-05"
+gradient_FAD_noise_0.01,0.9963,gradient_ascent_FAD,500,noise_0.01,"lr=0.05, TV_w=0.0001, L2_w=1e-05"
+gradient_WT_mean_WT,0.0042,gradient_descent_WT,500,mean_WT,"lr=0.05, TV_w=0.0001, L2_w=1e-05"
+gradient_WT_mean_5xFAD,0.0006,gradient_descent_WT,500,mean_5xFAD,"lr=0.05, TV_w=0.0001, L2_w=1e-05"
+gradient_WT_noise_0.01,0.0011,gradient_descent_WT,500,noise_0.01,"lr=0.05, TV_w=0.0001, L2_w=1e-05"
+bo_FAD_optimal,0.7856,bayesian_optimization_FAD,200,"K_PCA=15, n_init=50","EI, maximise P(5xFAD)"
+bo_WT_optimal,0.121,bayesian_optimization_WT,200,"K_PCA=15, n_init=50","EI, minimise P(5xFAD)"

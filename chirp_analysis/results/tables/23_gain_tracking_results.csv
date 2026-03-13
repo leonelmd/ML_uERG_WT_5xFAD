@@ -1,0 +1,4 @@
+feature_set,n_features,best_clf,auc,acc,f1,sens,spec
+HC_orig,13,Log. Regression,0.735,0.696,0.693,0.609,0.783
+GainTracking,4,SVM (RBF),0.686,0.652,0.652,0.609,0.696
+HC+GainTracking,17,k-NN (k=5),0.834,0.783,0.782,0.826,0.739

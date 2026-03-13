@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Cached dataset tensors (large binary files, rebuilt from raw H5 data)
+chirp_analysis/data/cache/
+natural_image_analysis/data/cache/
+
+# Trained model weights (rebuilt by running the scripts)
+# chirp_analysis/models/
+# natural_image_analysis/models/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Distribution
+dist/
+build/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# data cleaning
+00_cleanup_data.py
+00_restore_sex.py
+
+# Presentation
+creat_ml_presentation.py
+*.pptx
