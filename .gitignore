@@ -41,3 +41,6 @@ build/
 # Presentation
 creat_ml_presentation.py
 *.pptx
+
+# Multichannel in exploratory phase
+multichannel_exploration
